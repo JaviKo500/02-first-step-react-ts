@@ -14,7 +14,14 @@ export function MyAwesomeApp() {
       <h3>{lastName}</h3>
       <p>{favoriteGames.join(', ')}</p>
       <h1>{isActive ? 'Active' : 'Inactive'}</h1>
-      <pre>{JSON.stringify(address)}</pre>
+      <pre style={{
+        backgroundColor: 'grey',
+        color: 'white',
+        padding: '10px',
+        borderRadius: '5px',
+      }}>
+        {JSON.stringify(address)}
+      </pre>
     </>
   );
 }
