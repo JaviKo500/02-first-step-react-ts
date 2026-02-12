@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './ItemCounter.css';
 interface ItemCounterProps {
   productName: string;
   quantity?: number;
@@ -16,7 +16,9 @@ export const ItemCounter = ({ productName, quantity = 1 }: ItemCounterProps) => 
   return (
     <section>
       <br />
-      <div style={{ marginBottom: '8px' }} >{productName}</div>
+      <div className={'item-row'} style={{
+        color: count === 1 ? 'red' : ''
+      }} >{productName}</div>
       <button onClick={decreaseItems} >-1</button>
       <span style={{
         marginLeft: '10px',
