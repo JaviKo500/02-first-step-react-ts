@@ -21,4 +21,14 @@ describe('MyAwesomeApp.test', () => {
     const h1 = screen.getByTestId('first-name-title', {});
     expect(h1?.innerHTML).toContain('Javiko500');
   });
+
+  test( 'should match with snapshot', () => {
+    const { container } = render(<MyAwesomeApp />);
+    expect(container).toMatchSnapshot();
+  });
+
+  test( 'should match with snapshot screen', () => {
+    render(<MyAwesomeApp />);
+    expect( screen.getByTestId('my-awesome-app') ).toMatchSnapshot();
+  });
 });

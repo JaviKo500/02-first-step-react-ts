@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp.test > should match with snapshot 1`] = `
+<div>
+  <div
+    data-testid="my-awesome-app"
+  >
+    <h1
+      data-testid="first-name-title"
+    >
+      Javiko500
+    </h1>
+    <h3>
+      Gutierrez
+    </h3>
+    <p
+      class="my-favorite-class"
+    >
+      Minecraft, League of Legends, Fortnite
+    </p>
+    <h1>
+      Active
+    </h1>
+    <pre
+      style="background-color: grey; color: white; padding: 10px; border-radius: 5px;"
+    >
+      {"street":"Calle de la Paz","number":123,"city":"Cuenca"}
+    </pre>
+  </div>
+</div>
+`;
+
+exports[`MyAwesomeApp.test > should match with snapshot screen 1`] = `
+<div
+  data-testid="my-awesome-app"
+>
+  <h1
+    data-testid="first-name-title"
+  >
+    Javiko500
+  </h1>
+  <h3>
+    Gutierrez
+  </h3>
+  <p
+    class="my-favorite-class"
+  >
+    Minecraft, League of Legends, Fortnite
+  </p>
+  <h1>
+    Active
+  </h1>
+  <pre
+    style="background-color: grey; color: white; padding: 10px; border-radius: 5px;"
+  >
+    {"street":"Calle de la Paz","number":123,"city":"Cuenca"}
+  </pre>
+</div>
+`;

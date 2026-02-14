@@ -10,10 +10,10 @@ const address = {
 }
 export function MyAwesomeApp() {
   return (
-    <>
+    <div data-testid="my-awesome-app">
       <h1 data-testid="first-name-title">{name}</h1>
       <h3>{lastName}</h3>
-      <p>{favoriteGames.join(', ')}</p>
+      <p className="my-favorite-class">{favoriteGames.join(', ')}</p>
       <h1>{isActive ? 'Active' : 'Inactive'}</h1>
       <pre style={{
         backgroundColor: 'grey',
@@ -23,6 +23,6 @@ export function MyAwesomeApp() {
       }}>
         {JSON.stringify(address)}
       </pre>
-    </>
+    </div>
   );
 }
