@@ -33,4 +33,15 @@ describe('ItemCounter.test', () => {
     fireEvent.click(minusButton);
     expect( screen.getByText('1') ).toBeDefined();
   });
+  test( 'should change to read when count is 1', () => {
+    const quantity = 1;
+    const prodName = 'Nintendo Switch';
+    render(<ItemCounter productName={prodName} quantity={quantity}/>);
+    let itemText = screen.getByText(prodName);
+    expect( itemText.style.color ).toBe('red');
+    const [, addButton] = screen.getAllByRole('button');
+    fireEvent.click(addButton);
+    itemText = screen.getByText(prodName);
+    expect( itemText.style.color ).toBe('');
+  });
 });
