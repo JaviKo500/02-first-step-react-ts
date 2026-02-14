@@ -11,7 +11,7 @@ const address = {
 export function MyAwesomeApp() {
   return (
     <>
-      <h1>{name}</h1>
+      <h1 data-testid="first-name-title">{name}</h1>
       <h3>{lastName}</h3>
       <p>{favoriteGames.join(', ')}</p>
       <h1>{isActive ? 'Active' : 'Inactive'}</h1>

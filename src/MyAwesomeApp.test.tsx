@@ -18,8 +18,7 @@ describe('MyAwesomeApp.test', () => {
     render(<MyAwesomeApp />);
     screen.debug();
 
-    const h1 = screen.getByRole('heading', {});
-
+    const h1 = screen.getByTestId('first-name-title', {});
     expect(h1?.innerHTML).toContain('Javiko500');
   });
 });
