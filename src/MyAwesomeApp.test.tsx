@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 describe('MyAwesomeApp.test', () => {
   test( 'should render first name and last name', () => {
     const { container } = render(<MyAwesomeApp />);
-    screen.debug();
+    // screen.debug();
 
     const h1 = container.querySelector('h1');
     const h3  = container.querySelector('h3');
@@ -16,7 +16,7 @@ describe('MyAwesomeApp.test', () => {
 
   test( 'should render first name and last name', () => {
     render(<MyAwesomeApp />);
-    screen.debug();
+    // screen.debug();
 
     const h1 = screen.getByTestId('first-name-title', {});
     expect(h1?.innerHTML).toContain('Javiko500');
