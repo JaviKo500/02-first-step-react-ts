@@ -10,18 +10,25 @@ A learning project demonstrating React fundamentals with TypeScript and Vite. Th
 - **Shopping Cart Display** - Lists items with individual quantity controls
 - **ESLint configuration** for code quality
 - **SWC** for fast TypeScript/JSX transformation
+- **Vitest** for unit testing and code coverage
+- **Testing Library** for component testing
+- **Helper modules** with math utilities
 
 ## Project Structure
 
 ```
 src/
-├── App.tsx              # Main component styling
-├── FirstStepApp.tsx     # Shopping cart application
-├── main.tsx             # Application entry point
+├── App.tsx                      # Main component styling
+├── FirstStepApp.tsx             # Shopping cart application
+├── main.tsx                     # Application entry point
 ├── shopping-cart/
-│   ├── ItemCounter.tsx  # Item counter component with increment/decrement
-│   └── ItemCounter.css  # Component styling
-└── assets/              # Static assets
+│   ├── ItemCounter.tsx          # Item counter component with increment/decrement
+│   ├── ItemCounter.css          # Component styling
+│   └── ItemCounter.test.tsx     # Component tests
+├── helpers/
+│   ├── math.helper.ts           # Math utility functions
+│   └── math.helper.test.ts      # Helper functions tests
+└── assets/                      # Static assets
 ```
 
 ## Getting Started
@@ -55,6 +62,9 @@ The application will be available at `http://localhost:5173`
 
 ## Available Scripts
 
+- `npm run test` - Run tests with Vitest
+- `npm run test:ui` - Run tests with UI dashboard
+- `npm run coverage` - Generate code coverage report
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
@@ -77,7 +87,10 @@ A controlled component that manages and displays item quantities with increment/
 ## Technologies Used
 
 - **React 18.3** - UI library
-- **TypeScript 5.6** - Type safety
+- **TypeScript 5.6** - Type
+- **Vitest 4** - Unit testing framework
+- **Testing Library** - React component testing utilities
+- **Vitest Coverage** - Code coverage reporting safety
 - **Vite 6** - Build tool and dev server
 - **SWC** - Fast JavaScript/TypeScript compiler
 - **ESLint** - Code linting
@@ -87,7 +100,32 @@ A controlled component that manages and displays item quantities with increment/
 This project covers:
 - Functional components with TypeScript
 - React Hooks (useState)
-- Component composition and reusability
+- Component composition a
+- **Unit testing with Vitest**
+- **Component testing with Testing Library**
+- **Mocking functions and modules**
+- **Snapshot testing**
+- **Code coverage analysis**
+
+## Testing
+
+The project includes comprehensive tests for components and utilities:
+
+- **Component Tests** - ItemCounter component with event interactions
+- **Unit Tests** - Math helper functions (divide, etc.)
+- **Snapshot Tests** - Component rendering consistency
+- **Style Tests** - CSS class application verification
+- **Mock Tests** - Function call verification
+
+View test results with UI:
+```bash
+npm run test:ui
+```
+
+Generate coverage report:
+```bash
+npm run coverage
+```nd reusability
 - Props and interfaces
 - Conditional rendering and styling
 - Array mapping and lists
