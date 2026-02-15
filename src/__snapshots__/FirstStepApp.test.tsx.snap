@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FirstStepApp.test > should match with snapshot 1`] = `
+<div>
+  <h1>
+    Cart shopping
+  </h1>
+  <section>
+    <br />
+    <div
+      class="item-row"
+      style="color: red;"
+    >
+      Plays station 5
+    </div>
+    <button>
+      -1
+    </button>
+    <span
+      style="margin-left: 10px; margin-right: 10px;"
+    >
+      1
+    </span>
+    <button>
+      +1
+    </button>
+  </section>
+  <section>
+    <br />
+    <div
+      class="item-row"
+      style="color: red;"
+    >
+      Xbox one
+    </div>
+    <button>
+      -1
+    </button>
+    <span
+      style="margin-left: 10px; margin-right: 10px;"
+    >
+      1
+    </span>
+    <button>
+      +1
+    </button>
+  </section>
+  <section>
+    <br />
+    <div
+      class="item-row"
+      style="color: red;"
+    >
+      Azus Rog
+    </div>
+    <button>
+      -1
+    </button>
+    <span
+      style="margin-left: 10px; margin-right: 10px;"
+    >
+      1
+    </span>
+    <button>
+      +1
+    </button>
+  </section>
+</div>
+`;
